@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+var app = require('../app');
+var open = require('open');
+
+app.set('port', app.locals.PORT);
+
+var server = app.listen(app.get('port'), function() {
+  console.log('Express server listening on port ' + server.address().port);
+  if (app.locals.DEV) {
+    open('http://localhost:' + server.address().port);
+  }
+});
