@@ -3,14 +3,17 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "postinstall": "./node_modules/bower/bin/bower install"
   },
   "dependencies": {
     "bluebird": "^3.1.1",
+    "bower": "^1.7.2",
     "chromedriver": "^2.20.0",
     "express": "^4.13.3",
     "firefox-profile": "^0.3.11",
     "http-proxy": "^1.12.0",
+    "jasmine": "^2.4.1",
     "lodash": "^3.10.1",
     "morgan": "^1.6.1",
     "request": "^2.67.0",
