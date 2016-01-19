@@ -21,9 +21,7 @@ describe('Login to facebook.com', () => {
           .findElement(browser.select('#loginbutton > input'))
           .sendKeys(browser.keys.ENTER);
         browser
-          .get('https://www.facebook.com/?_rdr=p')
-          .then(done);
-
+          .get('https://www.facebook.com/?_rdr=p');
         /*browser
           .getTitle()
           .then((title) => {
