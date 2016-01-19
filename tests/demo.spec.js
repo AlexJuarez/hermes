@@ -22,11 +22,12 @@ describe('Login to facebook.com', () => {
           .sendKeys(browser.keys.ENTER);
         browser
           .get('https://www.facebook.com/?_rdr=p');
-        /*browser
+        browser
           .getTitle()
           .then((title) => {
             expect(title).toEqual('Facebook');
-          });*/
+            done();
+          });
       });
 
   });
