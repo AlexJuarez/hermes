@@ -12,6 +12,7 @@
     "chromedriver": "^2.20.0",
     "express": "^4.13.3",
     "firefox-profile": "^0.3.11",
+    "gaze": "^0.5.2",
     "glob": "^6.0.4",
     "http-proxy": "^1.12.0",
     "jasmine": "^2.4.1",
