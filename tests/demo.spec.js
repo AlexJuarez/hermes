@@ -21,12 +21,14 @@ describe('Login to facebook.com', () => {
           .findElement(browser.select('#loginbutton > input'))
           .sendKeys(browser.keys.ENTER);
         browser
-          .get('https://www.facebook.com/?_rdr=p');
-        browser
-          .getTitle()
-          .then((title) => {
-            expect(title).toEqual('Facebook');
-            done();
+          .get('https://www.facebook.com/')
+          .then(() => {
+            browser
+              .getTitle()
+              .then((title) => {
+                expect(title).toEqual('Facebook');
+                done();
+              });
           });
       });
 

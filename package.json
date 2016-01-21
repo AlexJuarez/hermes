@@ -9,6 +9,7 @@
   "dependencies": {
     "bluebird": "^3.1.1",
     "bower": "^1.7.2",
+    "chalk": "^1.1.1",
     "chromedriver": "^2.20.0",
     "express": "^4.13.3",
     "firefox-profile": "^0.3.11",
@@ -16,7 +17,7 @@
     "glob": "^6.0.4",
     "http-proxy": "^1.12.0",
     "jasmine": "^2.4.1",
-    "lodash": "^3.10.1",
+    "lodash": "^4.0.0",
     "log4js": "^0.6.29",
     "morgan": "^1.6.1",
     "request": "^2.67.0",
