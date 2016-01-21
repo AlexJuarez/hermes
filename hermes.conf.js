@@ -14,7 +14,7 @@ module.exports = function(config) {
       domain: 'localhost'
     },
     colors: true,
-    logLevel: config.LOG_INFO,
+    logLevel: config.LOG_DEBUG,
     browsers: ['Chrome']
   });
 };
