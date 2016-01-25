@@ -21,7 +21,9 @@
     "log4js": "^0.6.29",
     "morgan": "^1.6.1",
     "request": "^2.67.0",
-    "selenium-webdriver": "^2.48.2"
+    "selenium-webdriver": "^2.48.2",
+    "socket.io": "^1.4.4",
+    "socket.io-client": "^1.4.4"
   },
   "devDependencies": {
     "grunt": "^0.4.5",

@@ -14,6 +14,7 @@ module.exports = function(config) {
       domain: 'localhost'
     },
     colors: true,
+    port: 9887,
     logLevel: config.LOG_DEBUG,
     browsers: ['Chrome']
   });
