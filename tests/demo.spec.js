@@ -1,4 +1,6 @@
 
+var creds = require('.creds.json');
+
 describe('Login to facebook.com', () => {
   it('should login as me', (done) => {
     browser
@@ -13,10 +15,10 @@ describe('Login to facebook.com', () => {
         expect(title).toEqual('Facebook - Log In or Sign Up');
         browser
           .findElement(browser.select('#email'))
-          .sendKeys('***REMOVED***');
+          .sendKeys(creds.username);
         browser
           .findElement(browser.select('#pass'))
-          .sendKeys('***REMOVED***');
+          .sendKeys(creds.password);
         browser
           .findElement(browser.select('#loginbutton > input'))
           .sendKeys(browser.keys.ENTER);

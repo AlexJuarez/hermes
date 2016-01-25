@@ -3,3 +3,4 @@ public/components
 .sass-cache
 .idea
 *.log
+**/.creds.json
