@@ -31,7 +31,7 @@ class Proxy extends EventEmitter {
     this._server = http(this._app, this._config);
     this._https_server = https(this._app, this._config);
     log.debug(`proxy server ready at ` +
-      `${this._config.domain}:${this._config.httpPort}.`);
+      `localhost:${this._config.httpPort}.`);
 
     this.emit('ready');
   }

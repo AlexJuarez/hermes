@@ -5,7 +5,7 @@
   "description": "a proxy server for capturing and replaying http/https traffic",
   "author": "Alex Juarez",
   "scripts": {
-    "start": "node ./bin/hermes-proxy.js"
+    "start": "node ./bin/hermes-proxy"
   },
   "dependencies": {
     "express": "^4.13.4",
@@ -13,8 +13,5 @@
     "request": "^2.67.0",
     "socket.io-client": "^1.4.4"
   },
-  "license": "MIT",
-  "bin": {
-    "proxy": "./bin/hermes-proxy.js"
-  }
+  "license": "MIT"
 }
