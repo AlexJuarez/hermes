@@ -45,6 +45,7 @@ class ProxyClient {
 
     socket.on('close', () => {
       self._proxy.close();
+      socket.disconnect();
     });
 
     socket.on('connect_error', (err) => {

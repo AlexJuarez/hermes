@@ -45,8 +45,10 @@ class Proxy extends EventEmitter {
   }
 
   close() {
-    this._https_server.close();
-    this._server.close();
+    if (this._https_server && this._server) {
+      this._https_server.close();
+      this._server.close();
+    }
     log.debug(`closing proxy server.`);
     this.emit('exit');
   }
