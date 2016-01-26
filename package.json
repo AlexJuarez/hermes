@@ -13,16 +13,12 @@
     "express": "^4.13.3",
     "firefox-profile": "^0.3.11",
     "glob": "^6.0.4",
+    "hermes-proxy": "file:packages/hermes-proxy",
+    "hermes-util": "file:packages/hermes-util",
     "jasmine": "^2.4.1",
     "lodash": "^4.0.0",
     "log4js": "^0.6.29",
     "selenium-webdriver": "^2.48.2",
     "socket.io": "^1.4.4"
-  },
-  "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-develop": "^0.4.0",
-    "load-grunt-tasks": "^3.2.0"
   }
 }

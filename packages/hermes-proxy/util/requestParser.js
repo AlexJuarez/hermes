@@ -1,6 +1,6 @@
 'use strict';
 
-const helper = require('hermes/lib/util');
+const helper = require('hermes-util');
 const headerWhiteList = ['host', 'accept', 'connection',
   'content-length', 'cookie'];
 
