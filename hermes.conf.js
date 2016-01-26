@@ -2,7 +2,7 @@
 module.exports = function(config) {
   config.set({
     autoWatch: false,
-    frameworks: ['jasmine'],
+    adapters: ['jasmine'],
     files: [
       'tests/**/*.spec.js'
     ],

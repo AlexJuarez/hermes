@@ -5,6 +5,7 @@
   "private": true,
   "dependencies": {
     "hermes-util": "file:///Users/tall/Projects/hermes/packages/hermes-util",
-    "hermes-constants": "file:///Users/tall/Projects/hermes/packages/hermes-constants"
+    "hermes-constants": "file:///Users/tall/Projects/hermes/packages/hermes-constants",
+    "log4js": "^0.6.29"
   }
 }

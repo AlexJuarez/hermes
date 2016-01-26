@@ -18,9 +18,7 @@
     "hermes-store": "file:packages/hermes-store",
     "hermes-constants": "file:packages/hermes-constants",
     "hermes-logger": "file:packages/hermes-logger",
-    "jasmine": "^2.4.1",
-    "lodash": "^4.0.0",
-    "log4js": "^0.6.29",
+    "hermes-jasmine": "file:packages/hermes-jasmine",
     "selenium-webdriver": "^2.48.2",
     "socket.io": "^1.4.4"
   }

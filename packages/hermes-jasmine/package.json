@@ -1,0 +1,9 @@
+{
+  "name": "hermes-jasmine",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "dependencies": {
+    "hermes-adapter": "file:///Users/tall/Projects/hermes/packages/hermes-adapter"
+  }
+}
