@@ -1,8 +1,8 @@
 # Hermes-proxy
 
-To run hermes proxy use npm start -- <opts> or use node ./bin/hermes-proxy <opts>
+To run hermes proxy use `npm start -- [opts]` or use `node ./bin/hermes-proxy [opts]`
 
-Try npm start -- --help to get started
+Try `npm start -- --help` to get started
 
 ## Options
 
