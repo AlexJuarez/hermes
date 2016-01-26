@@ -4,6 +4,10 @@ To run hermes proxy use `npm start -- [opts]` or use `node ./bin/hermes-proxy [o
 
 Try `npm start -- --help` to get started
 
+### Quick Setup
+
+First run `npm install` in this directory
+
 ## Options
 
 | Argument | Description | Default |
