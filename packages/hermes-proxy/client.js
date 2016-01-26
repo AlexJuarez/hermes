@@ -3,7 +3,7 @@
 const io = require('socket.io-client');
 const url = require('url');
 const Proxy = require('./server');
-const logger = require('hermes/lib/logger');
+const logger = require('hermes-logger');
 const log = logger.create('proxy-client');
 
 class ProxyClient {

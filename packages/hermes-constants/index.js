@@ -3,11 +3,12 @@
 const fs = require('fs');
 const path = require('path');
 
-const pkg = JSON
-  .parse(fs.readFileSync(__dirname + '/../package.json', 'utf8'));
+const pkg = JSON.parse(
+  fs.readFileSync(
+    path.resolve(process.cwd(), './package.json'), 'utf8'));
 
-const JASMINE_PATH = path.resolve(__dirname,
-  './../vendor/jasmine-core/jasmine-2.4.1.js');
+const JASMINE_PATH = path.resolve(process.cwd(),
+  './vendor/jasmine-core/jasmine-2.4.1.js');
 
 exports.JASMINE_PATH = JASMINE_PATH;
 exports.JASMINE_2 = fs.readFileSync(JASMINE_PATH, 'utf8');

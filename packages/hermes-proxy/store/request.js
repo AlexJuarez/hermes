@@ -1,6 +1,6 @@
 'use strict';
 
-const Store = require('hermes/lib/store');
+const Store = require('hermes-store');
 const requestUtils = require('./../util/requestParser');
 
 class RequestStore extends Store {

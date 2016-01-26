@@ -1,7 +1,7 @@
 'use strict';
 
 const log4js = require('log4js');
-const constant = require('./constants');
+const constant = require('hermes-constants');
 const helper = require('hermes-util');
 
 function setup(level, colors, appenders) {

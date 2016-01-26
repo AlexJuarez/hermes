@@ -1,0 +1,10 @@
+{
+  "name": "hermes-logger",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "dependencies": {
+    "hermes-util": "file:///Users/tall/Projects/hermes/packages/hermes-util",
+    "hermes-constants": "file:///Users/tall/Projects/hermes/packages/hermes-constants"
+  }
+}
