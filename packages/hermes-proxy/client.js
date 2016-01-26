@@ -2,7 +2,9 @@
 
 const io = require('socket.io-client');
 const url = require('url');
-const Proxy = require('./');
+const Proxy = require('./server');
+const logger = require('hermes/lib/logger');
+const log = logger.create('proxy-client');
 
 class ProxyClient {
   constructor(config) {
@@ -14,7 +16,11 @@ class ProxyClient {
     });
     const self = this;
 
-    this._socket = io.connect(decodeURIComponent(u));
+    log.debug(`attempting to connect to ${u}`);
+    this._socket = io.connect(decodeURIComponent(u),
+      {
+        reconnection: config.retry
+      });
     const socket = this._socket;
 
     socket.on('connect', () => {
@@ -40,6 +46,14 @@ class ProxyClient {
     socket.on('close', () => {
       self._proxy.close();
     });
+
+    socket.on('connect_error', (err) => {
+      log.error(`connection attempt failed: ${err.message}`);
+    });
+
+    socket.on('reconnect_error', (err) => {
+      log.error(`reconnection attempt failed: ${err.message}`);
+    })
   }
 
   emit() {
