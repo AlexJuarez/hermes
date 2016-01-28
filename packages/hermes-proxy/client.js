@@ -43,7 +43,7 @@ class ProxyClient {
       self._proxy.disable();
     });
 
-    socket.on('close', () => {
+    socket.on('exit', () => {
       self._proxy.close();
       socket.disconnect();
     });

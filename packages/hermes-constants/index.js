@@ -20,6 +20,13 @@ exports.LOG_DEBUG = 'DEBUG';
 exports.COLOR_PATTERN = '%[%d{DATE}:%p [%c]: %]%m';
 exports.NO_COLOR_PATTERN = '%d{DATE}:%p [%c]: %m';
 
+exports.GLOB_OPTS = {
+  //cwd: '/',
+  follow: true,
+  nodir: true,
+  sync: true
+};
+
 // Default console appender
 exports.CONSOLE_APPENDER = {
   type: 'console',

@@ -34,7 +34,11 @@ function round(num, places) {
   return +(Math.round(num + 'e+' + places) + 'e-' + places);
 }
 
+exports._ = _;
+
+exports.isEmpty = _.isEmpty;
 exports.isDefined = isDefined;
+exports.isUndefined = _.isUndefined;
 exports.isFunction = _.isFunction;
 exports.isString = _.isString;
 exports.isObject = _.isObject;
@@ -42,6 +46,7 @@ exports.isArray = _.isArray;
 exports.copy = _.cloneDeep;
 exports.defaults = _.defaults;
 exports.uniqWith = _.uniqWith;
+exports.uniq = _.uniq;
 exports.flatten = _.flatten;
 exports.isEqual = _.isEqual;
 exports.formatTime = formatTime;
