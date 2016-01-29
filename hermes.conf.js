@@ -3,6 +3,7 @@ module.exports = function(config) {
   config.set({
     autoWatch: false,
     adapters: ['jasmine'],
+    reporters: ['progress'],
     files: [
       'tests/**/*.spec.js'
     ],
@@ -11,7 +12,8 @@ module.exports = function(config) {
     proxy: {
       httpPort: 3000,
       httpsPort: 3001,
-      domain: 'localhost'
+      domain: 'localhost',
+      start: true
     },
     colors: true,
     port: 9887,
