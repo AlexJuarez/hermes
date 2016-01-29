@@ -12,13 +12,14 @@
     "expand-braces": "^0.1.2",
     "express": "^4.13.3",
     "glob": "^6.0.4",
+    "graceful-fs": "^4.1.2",
+    "hermes-chrome": "file:packages/hermes-chrome",
     "hermes-constants": "file:packages/hermes-constants",
     "hermes-jasmine": "file:packages/hermes-jasmine",
     "hermes-logger": "file:packages/hermes-logger",
     "hermes-proxy": "file:packages/hermes-proxy",
     "hermes-store": "file:packages/hermes-store",
     "hermes-util": "file:packages/hermes-util",
-    "hermes-chrome": "file:packages/hermes-chrome",
     "socket.io": "^1.4.4"
   }
 }

@@ -5,17 +5,16 @@ module.exports = function(config) {
     adapters: ['jasmine'],
     reporters: ['progress'],
     files: [
-      'tests/**/*.spec.js'
+      'lib/**/*.test.js'
     ],
     exclude: [
-      'tests/e2e/**/*.spec.js'
     ],
-    proxy: {
+    /*proxy: {
       httpPort: 3000,
       httpsPort: 3001,
       domain: 'localhost',
       start: true
-    },
+    },*/
     colors: true,
     port: 9887,
     iterations: 1,
