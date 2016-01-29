@@ -1,7 +1,7 @@
 // hermes.conf.js
 module.exports = function(config) {
   config.set({
-    autoWatch: false,
+    autoWatch: true,
     adapters: ['jasmine'],
     reporters: ['progress'],
     files: [

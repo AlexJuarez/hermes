@@ -1,0 +1,11 @@
+{
+  "name": "hermes-chrome",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "dependencies": {
+    "chromedriver": "^2.20.0",
+    "selenium-webdriver": "^2.48.2",
+    "hermes-constants": "file:///Users/tall/Projects/hermes/packages/hermes-constants"
+  }
+}

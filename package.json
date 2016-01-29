@@ -9,10 +9,8 @@
     "bluebird": "^3.1.5",
     "chalk": "^1.1.1",
     "chokidar": "^1.4.2",
-    "chromedriver": "^2.20.0",
     "expand-braces": "^0.1.2",
     "express": "^4.13.3",
-    "firefox-profile": "^0.3.11",
     "glob": "^6.0.4",
     "hermes-constants": "file:packages/hermes-constants",
     "hermes-jasmine": "file:packages/hermes-jasmine",
@@ -20,7 +18,7 @@
     "hermes-proxy": "file:packages/hermes-proxy",
     "hermes-store": "file:packages/hermes-store",
     "hermes-util": "file:packages/hermes-util",
-    "selenium-webdriver": "^2.48.2",
+    "hermes-chrome": "file:packages/hermes-chrome",
     "socket.io": "^1.4.4"
   }
 }
