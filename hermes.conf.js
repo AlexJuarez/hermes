@@ -2,7 +2,7 @@
 module.exports = function(config) {
   config.set({
     autoWatch: true,
-    adapters: ['jasmine'],
+    plugins: ['jasmine'],
     reporters: ['progress'],
     files: [
       'lib/**/*.test.js'

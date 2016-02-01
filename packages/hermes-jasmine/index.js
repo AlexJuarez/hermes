@@ -44,4 +44,6 @@ class JasmineAdapter extends Adapter {
   }
 }
 
-module.exports = JasmineAdapter;
+module.exports = {
+  adapters: [JasmineAdapter]
+};

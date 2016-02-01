@@ -3,9 +3,9 @@
 const webdriver = require('selenium-webdriver');
 const Driver = require('./lib/webdriver');
 const updateDriver = require('./lib/browser');
-const EventEmitter = require('events');
+const Browser = require('hermes-browser');
 
-class ChromeBrowser extends EventEmitter {
+class ChromeBrowser extends Browser {
   constructor(config) {
     super();
     this.config = config || {};
@@ -52,4 +52,6 @@ class ChromeBrowser extends EventEmitter {
   }
 }
 
-module.exports = ChromeBrowser;
+module.exports = {
+  browsers: [ChromeBrowser]
+};

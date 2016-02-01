@@ -6,6 +6,7 @@
   "dependencies": {
     "chromedriver": "^2.20.0",
     "selenium-webdriver": "^2.48.2",
-    "hermes-constants": "file:///Users/tall/Projects/hermes/packages/hermes-constants"
+    "hermes-constants": "file:///Users/tall/Projects/hermes/packages/hermes-constants",
+    "hermes-browser": "file:///Users/tall/Projects/hermes/packages/hermes-browser"
   }
 }
