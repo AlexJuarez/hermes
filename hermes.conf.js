@@ -17,7 +17,7 @@ module.exports = function(config) {
     },
     colors: true,
     port: 9887,
-    iterations: 5,
+    iterations: 2,
     logLevel: config.LOG_DEBUG
   });
 };

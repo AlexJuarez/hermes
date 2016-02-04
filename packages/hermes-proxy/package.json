@@ -10,9 +10,10 @@
   },
   "dependencies": {
     "express": "^4.13.4",
-    "hermes-util": "file:///Users/tall/Projects/hermes/packages/hermes-util",
-    "hermes-store": "file:///Users/tall/Projects/hermes/packages/hermes-store",
     "hermes-logger": "file:///Users/tall/Projects/hermes/packages/hermes-logger",
+    "hermes-store": "file:///Users/tall/Projects/hermes/packages/hermes-store",
+    "hermes-util": "file:///Users/tall/Projects/hermes/packages/hermes-util",
+    "morgan": "^1.6.1",
     "request": "^2.67.0",
     "socket.io-client": "^1.4.4"
   },

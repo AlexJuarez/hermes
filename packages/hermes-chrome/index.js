@@ -9,7 +9,7 @@ class ChromeBrowser extends Browser {
   constructor(config) {
     super();
     this.config = config || {};
-    this._driver = new Driver(config.proxy);
+    this._driver = new Driver(config);
     this._done = false;
   }
 
@@ -18,8 +18,8 @@ class ChromeBrowser extends Browser {
     return new Promise((resolve) => {
       self._driver.getTitle().then(() => {
         resolve();
-      })
-    })
+      });
+    });
   }
 
   setupEnv(environment) {
