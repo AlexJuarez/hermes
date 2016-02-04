@@ -36,6 +36,10 @@ class Proxy extends EventEmitter {
     this.emit('ready');
   }
 
+  flush() {
+    this._store = new RequestStore();
+  }
+
   enable() {
     this._enabled = true;
   }

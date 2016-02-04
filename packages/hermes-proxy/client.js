@@ -43,6 +43,10 @@ class ProxyClient {
       self._proxy.disable();
     });
 
+    socket.on('flush', () => {
+      self._proxy.flush();
+    });
+
     socket.on('exit', () => {
       self._proxy.close();
       socket.disconnect();
