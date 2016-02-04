@@ -7,8 +7,7 @@ const https = require('./https');
 const http = require('./http');
 const addRoutes = require('./routes');
 const addMiddleware = require('./middleware');
-const logger = require('hermes-logger');
-const log = logger.create('proxy');
+const log = require('./../logger')('proxy');
 
 class Proxy extends EventEmitter {
   constructor(config) {

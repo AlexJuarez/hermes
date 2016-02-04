@@ -1,11 +1,11 @@
 'use strict';
 
-const helper = require('hermes-util');
+const _ = require('lodash');
 const headerWhiteList = ['host', 'accept', 'connection',
   'content-length', 'cookie'];
 
 function headers(req) {
-  return helper.copy(req.headers);
+  return _.cloneDeep(req.headers);
 }
 
 function url(req) {

@@ -1,9 +1,9 @@
 'use strict';
 
-const Store = require('hermes-store');
+const EventEmitter = require('events');
 const requestUtils = require('./../util/requestParser');
 
-class RequestStore extends Store {
+class RequestStore extends EventEmitter {
   constructor(opts) {
     super(opts);
     this._cache = Object.create(null);

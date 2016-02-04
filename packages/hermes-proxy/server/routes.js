@@ -2,8 +2,7 @@
 
 const url = require('url');
 const zlib = require('zlib');
-const logger = require('hermes-logger');
-const log = logger.create('proxy');
+const log = require('hermes-logger')('proxy');
 
 let request = require('request');
 request = request.defaults({

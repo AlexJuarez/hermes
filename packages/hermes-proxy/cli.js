@@ -6,10 +6,15 @@ let program = require('commander');
 const Client = require('./client');
 const pkg = require('./package.json');
 const Proxy = require('./server');
+const log4js = require('log4js');
 
 function Run() {
   program
-    .version(pkg.version);
+    .version(pkg.version)
+    .option('--log-level',
+      'change the current log level',
+      /^(OFF|ERROR|WARN|INFO|DEBUG)$/i,
+      'DEBUG');
 
   program
     .command('start')
@@ -56,6 +61,7 @@ function Run() {
   program
     .parse(process.argv);
 
+  log4js.setGlobalLogLevel(program.logLevel);
 }
 
 module.exports.Run = Run;
