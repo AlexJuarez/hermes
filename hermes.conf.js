@@ -1,11 +1,23 @@
 // hermes.conf.js
+'use strict';
+
+const path = require('path');
+const fs = require('graceful-fs');
+
 module.exports = function(config) {
   config.set({
     autoWatch: false,
-    plugins: ['jasmine', 'chrome'],
-    reporters: ['progress'],
+    plugins: ['jasmine'],
+    reporters: [
+      'progress',
+      (results) => {
+        const p = path.resolve(__dirname, './results.json');
+        fs.writeFileSync(p,
+          JSON.stringify(results, null, ' '));
+      }
+    ],
     files: [
-      'tests/**/*.spec.js'
+      'tests/e2e/**/*.spec.js'
     ],
     exclude: [
     ],
@@ -17,7 +29,8 @@ module.exports = function(config) {
     },
     colors: true,
     port: 9887,
-    iterations: 2,
+    iterations: 3,
+    browsers: ['chrome'],
     logLevel: config.LOG_DEBUG
   });
 };
