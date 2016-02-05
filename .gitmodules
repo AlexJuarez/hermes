@@ -1,0 +1,3 @@
+[submodule "packages/hermes-proxy"]
+	path = packages/hermes-proxy
+	url = git@github.com:facebook/hermes-proxy.git
