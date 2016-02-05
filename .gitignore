@@ -4,4 +4,4 @@ public/components
 .idea
 *.log
 **/.creds.json
-results.json
+*results.json
