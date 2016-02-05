@@ -5,6 +5,9 @@
   "main": "client.js",
   "description": "a proxy server for capturing and replaying http/https traffic",
   "author": "Alex Juarez",
+  "bin": {
+    "hermes-proxy": "bin/hermes-proxy"
+  },
   "scripts": {
     "start": "node ./bin/hermes-proxy"
   },
