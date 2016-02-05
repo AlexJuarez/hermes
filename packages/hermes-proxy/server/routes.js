@@ -2,7 +2,7 @@
 
 const url = require('url');
 const zlib = require('zlib');
-const log = require('hermes-logger')('proxy');
+const log = require('./../logger')('proxy');
 
 let request = require('request');
 request = request.defaults({
@@ -30,13 +30,14 @@ function addRoutes(server) {
         res.end('page not found in cache');
       } else {
         var method = req.method.toLowerCase();
-        var u = url.format({
-          protocol: req.protocol,
-          host: req.get('host'),
-          pathname: req.originalUrl
-        });
 
-        var r = request[method](decodeURIComponent(u),
+        const urlBuilder = url.parse(req.originalUrl);
+        urlBuilder.host = req.get('host');
+        urlBuilder.protocol = req.protocol;
+
+        var u = decodeURIComponent(url.format(urlBuilder));
+
+        var r = request[method](u,
           (err, resp, buffer) => {
             if (!err) {
               store.set(req, buffer, resp);

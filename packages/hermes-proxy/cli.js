@@ -8,13 +8,11 @@ const pkg = require('./package.json');
 const Proxy = require('./server');
 const log4js = require('log4js');
 
+const loglevels = ['OFF', 'ERROR', 'WARN', 'INFO', 'DEBUG'];
+
 function Run() {
   program
-    .version(pkg.version)
-    .option('--log-level',
-      'change the current log level',
-      /^(OFF|ERROR|WARN|INFO|DEBUG)$/i,
-      'DEBUG');
+    .version(pkg.version);
 
   program
     .command('start')
@@ -24,11 +22,17 @@ function Run() {
     .option('-s, --https-port <n>',
       'https port for the proxy',
       parseInt)
+    .option('--log-level <level>',
+      `change the current log level - ${loglevels.join(', ')}`,
+      /^(OFF|ERROR|WARN|INFO|DEBUG)$/i,
+      'DEBUG')
     .action((options) => {
       const config = {
         httpPort: options.httpPort,
         httpsPort: options.httpsPort
       };
+
+      log4js.setGlobalLogLevel(options.logLevel);
 
       const proxy = new Proxy(config);
       proxy.startup();
@@ -37,16 +41,20 @@ function Run() {
   program
     .command('managed')
     .description('runs a proxy client with a managing server')
-    .option('-P, --protocol [value]',
+    .option('-P, --protocol <value>',
       'protocol for the proxy manager, defaults to http',
       /^(http|https)$/i)
     .option('-p, --port <n>',
       'port for the proxy manager',
       parseInt)
-    .option('-d, --domain [value]',
+    .option('-d, --domain <value>',
       'domain for the proxy manager, defaults to localhost')
     .option('--no-retry',
       'do not retry if the connection fails')
+    .option('--log-level <level>',
+      `change the current log level - ${loglevels.join(', ')}`,
+      /^(OFF|ERROR|WARN|INFO|DEBUG)$/i,
+      'DEBUG')
     .action((options) => {
       const config = {
         port: options.port,
@@ -55,13 +63,14 @@ function Run() {
         retry: options.retry
       };
 
+      log4js.setGlobalLogLevel(options.logLevel);
+
       new Client(config);
     });
 
   program
     .parse(process.argv);
 
-  log4js.setGlobalLogLevel(program.logLevel);
 }
 
 module.exports.Run = Run;
