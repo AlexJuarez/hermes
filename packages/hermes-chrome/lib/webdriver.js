@@ -19,7 +19,7 @@ loggingPerf.setLevel(webdriver.logging.Type.PERFORMANCE,
 chromeOptions.setChromeLogFile(constants.CHROME_LOG_PATH);
 chromeOptions.setLoggingPrefs(loggingPerf);
 chromeOptions.setPerfLoggingPrefs({
-  traceCategories: 'blink.console,disabled-by-default-devtools.timeline'
+  traceCategories: 'v8,blink.console,disabled-by-default-devtools.timeline'
 });
 chromeOptions.addArguments('--ignore-certificate-errors');
 chromeOptions.addArguments('--start-maximized');
