@@ -29,7 +29,7 @@ module.exports = function(config) {
     },
     colors: true,
     port: 9887,
-    iterations: 3,
+    iterations: 1,
     browsers: ['chrome'],
     logLevel: config.LOG_DEBUG
   });

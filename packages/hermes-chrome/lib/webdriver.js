@@ -23,6 +23,7 @@ chromeOptions.setPerfLoggingPrefs({
 });
 chromeOptions.addArguments('--ignore-certificate-errors');
 chromeOptions.addArguments('--start-maximized');
+chromeOptions.addArguments('--remote-debugging-port=9222');
 
 function driver(config) {
   config = config || {};
