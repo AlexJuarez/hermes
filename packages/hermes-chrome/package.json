@@ -8,5 +8,11 @@
     "selenium-webdriver": "^2.48.2",
     "hermes-constants": "file:///Users/tall/Projects/hermes/packages/hermes-constants",
     "hermes-browser": "file:///Users/tall/Projects/hermes/packages/hermes-browser"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

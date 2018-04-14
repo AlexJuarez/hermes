@@ -5,5 +5,11 @@
   "private": true,
   "dependencies": {
     "hermes-adapter": "file:///Users/tall/Projects/hermes/packages/hermes-adapter"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

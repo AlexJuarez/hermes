@@ -3,6 +3,12 @@
   "version": "0.0.1",
   "main": "index.js",
   "private": true,
-  "dependencies": {
-  }
+  "dependencies": {},
+  "description": "when implementing a browser plugin, it should inherit from this browser interface.",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }

@@ -22,5 +22,8 @@
     "hermes-util": "file:packages/hermes-util",
     "jsdom": "^8.0.2",
     "socket.io": "^1.4.4"
+  },
+  "devDependencies": {
+    "lerna": "^2.10.1"
   }
 }

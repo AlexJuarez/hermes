@@ -2,5 +2,11 @@
   "name": "hermes-store",
   "version": "1.0.0",
   "main": "index.js",
-  "private": true
+  "private": true,
+  "description": "When implementing a store, it should inherit from this interface.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }
