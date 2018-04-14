@@ -4,7 +4,7 @@
   "main": "index.js",
   "private": true,
   "dependencies": {
-    "hermes-adapter": "file:///Users/tall/Projects/hermes/packages/hermes-adapter"
+    "hermes-adapter": "file:///home/tall/projects/hermes/packages/hermes-adapter"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

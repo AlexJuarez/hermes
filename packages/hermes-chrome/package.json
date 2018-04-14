@@ -6,8 +6,8 @@
   "dependencies": {
     "chromedriver": "^2.20.0",
     "selenium-webdriver": "^2.48.2",
-    "hermes-constants": "file:///Users/tall/Projects/hermes/packages/hermes-constants",
-    "hermes-browser": "file:///Users/tall/Projects/hermes/packages/hermes-browser"
+    "hermes-constants": "file:///home/tall/projects/hermes/packages/hermes-constants",
+    "hermes-browser": "file:///home/tall/projects/hermes/packages/hermes-browser"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
